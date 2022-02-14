@@ -69,7 +69,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { id } = context.params;
-  console.log(id);
 
   const response = await fetch(
     `https://www.breakingbadapi.com/api/characters/${id}`,
