@@ -9,7 +9,7 @@ export default function Member({ character }) {
   }
 
   return (
-    <div className="flex flex-col items-center sm:flex-row sm:items-start gap-5 my-10">
+    <div className="container mx-auto flex flex-col items-center sm:flex-row sm:items-start gap-5 my-10 px-2">
       <div>
         <Image
           src={character[0].img}
@@ -24,7 +24,8 @@ export default function Member({ character }) {
             <span className="font-semibold">Name</span>: {character[0].name}
           </li>
           <li>
-            <span className="font-semibold">Nick</span>: {character[0].nickname}
+            <span className="font-semibold">Nickname</span>:{' '}
+            {character[0].nickname}
           </li>
           <li>
             <span className="font-semibold">Birthday</span>:{' '}
